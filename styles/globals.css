@@ -13,4 +13,27 @@ a {
 
 * {
   box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+
+.f1{
+  background: url('/home/bgf1.png') no-repeat center center;
+  background-size: cover;
+}
+
+.f2{
+  background: url('/home/bgf2.png') no-repeat center center;
+  background-size: cover;
+}
+
+.f3{
+  background: url('/home/bgf3.png') no-repeat center center;
+  background-size: cover;
+}
+
+.f4{
+  background: url('/home/bgf4.png') no-repeat center center;
+  background-size: cover;
 }
