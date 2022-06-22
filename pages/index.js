@@ -1,7 +1,7 @@
 /*
  * @Author: km2021
  * @Date: 1985-10-26 16:15:00
- * @LastEditTime: 2022-06-21 18:02:47
+ * @LastEditTime: 2022-06-22 10:24:12
  * @Description:
  * @FilePath: /web-zyh/pages/index.js
  *
@@ -85,7 +85,7 @@ export default function Home() {
                 <Block s={30}>03</Block>
               </Block>
             </Block>
-            <Block w="50%" h={480} bg="yellow" style={{ right: -70, top: -200 }}>
+            <Block w="60%" h={480} bg="yellow" style={{ right: '-10%', top: -200 }}>
               <Image src="/home/f3-1.png" objectFit="cover" layout="fill" />
             </Block>
           </Block>

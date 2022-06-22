@@ -1,3 +1,5 @@
+import React from 'react'
+
 export default function Block(props) {
   const handleSize = () => {
     const { h = null, w = null, fixed = null } = props
@@ -108,7 +110,6 @@ export default function Block(props) {
 
   const styles = {
     block: {
-      // overflow: 'auto',
       position: 'relative',
     },
     border: {
@@ -153,10 +154,10 @@ export default function Block(props) {
   }
 
   const {
-    onPress,
-    onLongPress,
+    node = 'div',
     flex,
     fBasis,
+    fShrink,
     row,
     column,
     center,
@@ -183,6 +184,7 @@ export default function Block(props) {
     border,
     radius,
     borderColor,
+    borderWidth,
     wrap,
     style,
     children,
@@ -200,8 +202,10 @@ export default function Block(props) {
     lineHeight && { 'line-height': lineHeight },
     flex && { display: 'flex', 'flex-grow': flex },
     fBasis && { 'flex-basis': fBasis },
+    fShrink && { 'flex-shrink': fShrink },
     border && styles.border,
     borderColor && { 'border-color': borderColor },
+    borderWidth && { 'border-width': borderWidth },
     radius && { 'border-radius': radius },
     row && styles.row,
     column && styles.column,
@@ -231,9 +235,15 @@ export default function Block(props) {
     }
   })
 
-  return (
-    <div style={finStyle} {...reset}>
-      {children}
-    </div>
-  )
+  const whichRender = (node) => {
+    return React.createElement(node, { style: finStyle, ...reset }, props.children)
+  }
+
+  return whichRender(node)
+
+  // return (
+  //   <div style={finStyle} {...reset}>
+  //     {children}
+  //   </div>
+  // )
 }
