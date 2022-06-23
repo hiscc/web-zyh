@@ -1,7 +1,7 @@
 /*
  * @Author: km2021
  * @Date: 1985-10-26 16:15:00
- * @LastEditTime: 2022-06-23 23:09:29
+ * @LastEditTime: 2022-06-23 23:41:26
  * @Description:
  * @FilePath: /web-zyh/next.config.js
  *
@@ -10,7 +10,7 @@
 
 
 const nextConfig = {
-  assetPrefix: ".",
+  assetPrefix: "/zyh",
   reactStrictMode: false,
   typescript: {
     // !! WARN !!
@@ -33,7 +33,7 @@ const nextConfig = {
     storePicturesInWEBP: true,
     generateAndUseBlurImages: true,
   },
-  experimental: { images: {  unoptimized: true, } },
+  // experimental: { images: {  unoptimized: true, } },
 }
 
 

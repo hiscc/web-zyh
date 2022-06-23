@@ -1,13 +1,13 @@
 /*
  * @Author: km2021
  * @Date: 2022-06-20 16:09:41
- * @LastEditTime: 2022-06-23 21:59:35
+ * @LastEditTime: 2022-06-23 23:27:07
  * @Description:
  * @FilePath: /web-zyh/components/footer.js
  *
  */
 import Block from '../components/Block'
-import Image from 'next/image'
+import ExportedImage from "next-image-export-optimizer";
 import styles from '../styles/Footer.module.css'
 
 export default function footer() {
@@ -93,7 +93,7 @@ export default function footer() {
         <Block flex column>
           <Block flex row>
             <Block w={20} h={20} margin={[0, 10, 0, 0]}>
-              <Image src="/about/phone.png" layout="fill" />
+              <ExportedImage src="/about/phone.png" layout="fill" />
             </Block>
             <Block>
               <Block>客户服务热线 7*12小时</Block>
@@ -104,8 +104,8 @@ export default function footer() {
           </Block>
 
           <Block flex row margin={[20, 0, 0]}>
-            <Block w={20} h={20} margin={[0, 10, 0, 0]}>
-              <Image src="/about/email-white.png" layout="fill" />
+            <Block w={20} h={16} margin={[0, 10, 0, 0]}>
+              <ExportedImage src="/about/email-white.png" layout="fill" />
             </Block>
             <Block>
               <Block>企业业务服务邮箱</Block>
@@ -115,7 +115,7 @@ export default function footer() {
 
           <Block flex column margin={[20, 0]} middle center className={styles.qr}>
             <Block fixed={100} margin={[0, 10, 0, 0]}>
-              <Image src="/about/qr.png" layout="fill" />
+              <ExportedImage src="/about/qr.png" layout="fill" />
             </Block>
             <Block color="#999999" margin={[7, 0, 0]}>
               关注我们

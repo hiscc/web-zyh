@@ -7,7 +7,7 @@
  *
  */
 import Head from 'next/head'
-import Image from 'next/image'
+import ExportedImage from "next-image-export-optimizer";
 import styles from '../styles/Product1.module.css'
 import Block from '../components/Block'
 
@@ -40,7 +40,7 @@ export default function Home() {
           <Block flex column>
             <Block flex row>
               <Block w={40} h={36}>
-                <Image src="/product1/i1.png" layout="fill" />
+                <ExportedImage src="/product1/i1.png" layout="fill" />
               </Block>
               <Block margin={[-8, 0, 0, 20]}>
                 <Block s={30}>传统物流行业</Block>
@@ -60,7 +60,7 @@ export default function Home() {
 
           <Block flex margin={[80, 0, 0]}>
             <Block w={187} h={205} wmin={187} className={styles.img}>
-              <Image src="/product1/m1.png" layout="fill" />
+              <ExportedImage src="/product1/m1.png" layout="fill" />
             </Block>
             <Block flex margin={[0, 0, 0, 100]} className={styles.item}>
               <Block
@@ -69,7 +69,7 @@ export default function Home() {
                 radius={14}
                 style={{ position: 'absolute', top: -50, left: -50, right: 50, bottom: 50, overflow: 'auto' }}
               >
-                <Image src="/product1/f1.png" layout="fill" objectFit="cover" />
+                <ExportedImage src="/product1/f1.png" layout="fill" objectFit="cover" />
               </Block>
               <Block padding={[32, 40]} bg="#FFF6F6" radius={14}>
                 <Block s={20} margin={[4, 0]}>
@@ -166,7 +166,7 @@ export default function Home() {
           <Block flex column>
             <Block flex row>
               <Block w={40} h={36}>
-                <Image src="/product1/i2.png" layout="fill" />
+                <ExportedImage src="/product1/i2.png" layout="fill" />
               </Block>
               <Block margin={[-8, 0, 0, 20]}>
                 <Block s={30}>网络货运平台</Block>
@@ -187,7 +187,7 @@ export default function Home() {
 
           <Block flex margin={[80, 0, 0]}>
             <Block w={187} h={205} wmin={187} className={styles.img}>
-              <Image src="/product1/m2.png" layout="fill" />
+              <ExportedImage src="/product1/m2.png" layout="fill" />
             </Block>
             <Block flex margin={[0, 0, 0, 100]} className={styles.item}>
               <Block
@@ -196,7 +196,7 @@ export default function Home() {
                 radius={14}
                 style={{ position: 'absolute', top: -50, left: -50, right: 50, bottom: 50, overflow: 'auto' }}
               >
-                <Image src="/product1/f2.png" layout="fill" objectFit="cover" />
+                <ExportedImage src="/product1/f2.png" layout="fill" objectFit="cover" />
               </Block>
               <Block padding={[32, 40]} bg="#FFF6F6" radius={14}>
                 <Block s={20} className="title-with-line" flex center middle>
@@ -241,7 +241,7 @@ export default function Home() {
           <Block flex column>
             <Block flex row>
               <Block w={40} h={36}>
-                <Image src="/product1/i3.png" layout="fill" />
+                <ExportedImage src="/product1/i3.png" layout="fill" />
               </Block>
               <Block margin={[-8, 0, 0, 20]}>
                 <Block s={30}>土石方运输行业</Block>
@@ -263,7 +263,7 @@ export default function Home() {
 
           <Block flex margin={[80, 0, 0]}>
             <Block w={187} h={205} wmin={187} className={styles.img}>
-              <Image src="/product1/m3.png" layout="fill" />
+              <ExportedImage src="/product1/m3.png" layout="fill" />
             </Block>
             <Block flex margin={[0, 0, 0, 100]} className={styles.item}>
               <Block
@@ -272,7 +272,7 @@ export default function Home() {
                 radius={14}
                 style={{ position: 'absolute', top: -50, left: -50, right: 50, bottom: 50, overflow: 'auto' }}
               >
-                <Image src="/product1/f3.png" layout="fill" objectFit="cover" />
+                <ExportedImage src="/product1/f3.png" layout="fill" objectFit="cover" />
               </Block>
               <Block padding={[32, 40]} bg="#FFF6F6" radius={14}>
                 <Block s={20} className="title-with-line" flex center middle>
@@ -317,7 +317,7 @@ export default function Home() {
           <Block flex column>
             <Block flex row>
               <Block w={40} h={36}>
-                <Image src="/product1/i4.png" layout="fill" />
+                <ExportedImage src="/product1/i4.png" layout="fill" />
               </Block>
               <Block margin={[-8, 0, 0, 20]}>
                 <Block s={30}>工程机械租赁行业</Block>
@@ -338,7 +338,7 @@ export default function Home() {
 
           <Block flex margin={[80, 0, 0]}>
             <Block w={187} h={205} wmin={187} className={styles.img}>
-              <Image src="/product1/m4.png" layout="fill" />
+              <ExportedImage src="/product1/m4.png" layout="fill" />
             </Block>
             <Block flex margin={[0, 0, 0, 100]} className={styles.item}>
               <Block
@@ -347,7 +347,7 @@ export default function Home() {
                 radius={14}
                 style={{ position: 'absolute', top: -50, left: -50, right: 50, bottom: 50, overflow: 'auto' }}
               >
-                <Image src="/product1/f4.png" layout="fill" objectFit="cover" />
+                <ExportedImage src="/product1/f4.png" layout="fill" objectFit="cover" />
               </Block>
               <Block padding={[32, 40]} bg="#FFF6F6" radius={14}>
                 <Block s={20} margin={[4, 0]}>

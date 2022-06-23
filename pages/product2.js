@@ -7,7 +7,7 @@
  *
  */
 import Head from 'next/head'
-import Image from 'next/image'
+import ExportedImage from "next-image-export-optimizer";
 import styles from '../styles/Product2.module.css'
 import Block from '../components/Block'
 
@@ -49,7 +49,7 @@ export default function Home() {
           <Block flex wrap className={styles.column}>
             <Block flex column margin={[10, 60, 0, 0]} className={styles.row}>
               <Block w={30} h={24} margin={[0, 0, 0, 13]}>
-                <Image src="/product2/f1-1.png" layout="fill" objectFit="cover" />
+                <ExportedImage src="/product2/f1-1.png" layout="fill" objectFit="cover" />
               </Block>
               <Block s={14} margin={[8, 0, 0]} w={96} flex row top className={styles.label}>
                 <Block w={3} h={14} bg="#E11A22" fShrink="0" margin={[4, 10, 0, 0]} />
@@ -59,7 +59,7 @@ export default function Home() {
 
             <Block flex column margin={[10, 60, 0, 0]} className={styles.row}>
               <Block w={30} h={24} margin={[0, 0, 0, 13]}>
-                <Image src="/product2/f1-2.png" layout="fill" objectFit="contain" />
+                <ExportedImage src="/product2/f1-2.png" layout="fill" objectFit="contain" />
               </Block>
               <Block s={14} margin={[8, 0, 0]} w={208} flex row top className={styles.label}>
                 <Block w={3} h={14} bg="#E11A22" fShrink="0" margin={[4, 10, 0, 0]} />
@@ -69,7 +69,7 @@ export default function Home() {
 
             <Block flex column margin={[10, 60, 0, 0]} className={styles.row}>
               <Block w={24} h={24} margin={[0, 0, 0, 13]}>
-                <Image src="/product2/f1-3.png" layout="fill" objectFit="cover" />
+                <ExportedImage src="/product2/f1-3.png" layout="fill" objectFit="cover" />
               </Block>
               <Block s={14} margin={[8, 0, 0]} w={208} flex row top className={styles.label}>
                 <Block w={3} h={14} bg="#E11A22" fShrink="0" margin={[4, 10, 0, 0]} />
@@ -79,7 +79,7 @@ export default function Home() {
 
             <Block flex column margin={[10, 60, 0, 0]} className={styles.row}>
               <Block w={24} h={24} margin={[0, 0, 0, 13]}>
-                <Image src="/product2/f1-4.png" layout="fill" objectFit="cover" />
+                <ExportedImage src="/product2/f1-4.png" layout="fill" objectFit="cover" />
               </Block>
               <Block s={14} margin={[8, 0, 0]} w={114} flex row top className={styles.label}>
                 <Block w={3} h={14} bg="#E11A22" fShrink="0" margin={[4, 10, 0, 0]} />
@@ -89,7 +89,7 @@ export default function Home() {
 
             <Block flex column margin={[10, 60, 0, 0]} className={styles.row}>
               <Block w={24} h={24} margin={[0, 0, 0, 13]}>
-                <Image src="/product2/f1-5.png" layout="fill" objectFit="cover" />
+                <ExportedImage src="/product2/f1-5.png" layout="fill" objectFit="cover" />
               </Block>
               <Block s={14} margin={[8, 0, 0]} w={140} flex row top className={styles.label}>
                 <Block w={3} h={14} bg="#E11A22" fShrink="0" margin={[4, 10, 0, 0]} />
@@ -132,7 +132,7 @@ export default function Home() {
                     0{index + 1}
                   </Block>
                   <Block fixed={50} fShrink={0}>
-                    <Image src={`/product2/i1-${index + 1}.png`} layout="fill" objectFit="cover" />
+                    <ExportedImage src={`/product2/i1-${index + 1}.png`} layout="fill" objectFit="cover" />
                   </Block>
                   <Block s={14} w={128} margin={[0, 0, 0, 12]} flex row>
                     {item}
@@ -166,7 +166,7 @@ export default function Home() {
           <Block flex wrap className={styles.column}>
             <Block flex column margin={[10, 60, 0, 0]} className={styles.row}>
               <Block w={30} h={26} margin={[0, 0, 0, 13]}>
-                <Image src="/product2/f2-1.png" layout="fill" objectFit="cover" />
+                <ExportedImage src="/product2/f2-1.png" layout="fill" objectFit="cover" />
               </Block>
               <Block s={14} margin={[8, 0, 0]} w={160} flex row top className={styles.label}>
                 <Block w={3} h={14} bg="#E11A22" fShrink="0" margin={[4, 10, 0, 0]} />
@@ -176,7 +176,7 @@ export default function Home() {
 
             <Block flex column margin={[10, 60, 0, 0]} className={styles.row}>
               <Block w={30} h={26} margin={[0, 0, 0, 13]}>
-                <Image src="/product2/f2-2.png" layout="fill" objectFit="cover" />
+                <ExportedImage src="/product2/f2-2.png" layout="fill" objectFit="cover" />
               </Block>
               <Block s={14} margin={[8, 0, 0]} w={160} flex row top className={styles.label}>
                 <Block w={3} h={14} bg="#E11A22" fShrink="0" margin={[4, 10, 0, 0]} />
@@ -186,7 +186,7 @@ export default function Home() {
 
             <Block flex column margin={[10, 60, 0, 0]} className={styles.row}>
               <Block w={22.5} h={26} margin={[0, 0, 0, 13]}>
-                <Image src="/product2/f2-3.png" layout="fill" objectFit="cover" />
+                <ExportedImage src="/product2/f2-3.png" layout="fill" objectFit="cover" />
               </Block>
               <Block s={14} margin={[8, 0, 0]} w={192} flex row top className={styles.label}>
                 <Block w={3} h={14} bg="#E11A22" fShrink="0" margin={[4, 10, 0, 0]} />
@@ -230,7 +230,7 @@ export default function Home() {
                     0{index + 1}
                   </Block>
                   <Block fixed={50} fShrink={0}>
-                    <Image src={`/product2/i2-${index + 1}.png`} layout="fill" objectFit="cover" />
+                    <ExportedImage src={`/product2/i2-${index + 1}.png`} layout="fill" objectFit="cover" />
                   </Block>
                   <Block s={14} w={128} margin={[0, 0, 0, 12]} flex row>
                     {item}
@@ -264,7 +264,7 @@ export default function Home() {
           <Block flex wrap className={styles.column}>
             <Block flex column margin={[10, 60, 0, 0]} className={styles.row}>
               <Block w={30} h={28} margin={[0, 0, 0, 13]}>
-                <Image src="/product2/f3-1.png" layout="fill" objectFit="cover" />
+                <ExportedImage src="/product2/f3-1.png" layout="fill" objectFit="cover" />
               </Block>
               <Block s={14} margin={[8, 0, 0]} w={220} flex row top className={styles.label}>
                 <Block w={3} h={14} bg="#E11A22" margin={[4, 10, 0, 0]} />
@@ -274,7 +274,7 @@ export default function Home() {
 
             <Block flex column margin={[10, 60, 0, 0]} className={styles.row}>
               <Block w={30} h={24} margin={[0, 0, 0, 13]}>
-                <Image src="/product2/f3-2.png" layout="fill" objectFit="contain" />
+                <ExportedImage src="/product2/f3-2.png" layout="fill" objectFit="contain" />
               </Block>
               <Block s={14} margin={[8, 0, 0]} w={228} flex row top className={styles.label}>
                 <Block w={3} h={14} bg="#E11A22" margin={[4, 10, 0, 0]} />
@@ -284,7 +284,7 @@ export default function Home() {
 
             <Block flex column margin={[10, 60, 0, 0]} className={styles.row}>
               <Block w={30} h={30} margin={[0, 0, 0, 13]}>
-                <Image src="/product2/f3-3.png" layout="fill" objectFit="cover" />
+                <ExportedImage src="/product2/f3-3.png" layout="fill" objectFit="cover" />
               </Block>
               <Block s={14} margin={[8, 0, 0]} w={208} flex row top className={styles.label}>
                 <Block w={3} h={14} bg="#E11A22" margin={[4, 10, 0, 0]} />
@@ -294,7 +294,7 @@ export default function Home() {
 
             <Block flex column margin={[10, 60, 0, 0]} className={styles.row}>
               <Block w={30} h={26} margin={[0, 0, 0, 13]}>
-                <Image src="/product2/f3-4.png" layout="fill" objectFit="cover" />
+                <ExportedImage src="/product2/f3-4.png" layout="fill" objectFit="cover" />
               </Block>
               <Block s={14} margin={[8, 0, 0]} w={258} flex row top className={styles.label}>
                 <Block w={3} h={14} bg="#E11A22" margin={[4, 10, 0, 0]} />
@@ -339,7 +339,7 @@ export default function Home() {
                     0{index + 1}
                   </Block>
                   <Block fixed={50} fShrink={0}>
-                    <Image src={`/product2/i3-${index + 1}.png`} layout="fill" objectFit="cover" />
+                    <ExportedImage src={`/product2/i3-${index + 1}.png`} layout="fill" objectFit="cover" />
                   </Block>
                   <Block s={14} w={128} margin={[0, 0, 0, 12]} flex row>
                     {item}
@@ -373,7 +373,7 @@ export default function Home() {
           <Block flex wrap className={styles.column}>
             <Block flex column margin={[10, 60, 0, 0]} className={styles.row}>
               <Block w={30} h={30} margin={[0, 0, 0, 13]}>
-                <Image src="/product2/f4-1.png" layout="fill" objectFit="cover" />
+                <ExportedImage src="/product2/f4-1.png" layout="fill" objectFit="cover" />
               </Block>
               <Block s={14} margin={[8, 0, 0]} w={100} flex row top className={styles.label}>
                 <Block w={3} h={14} bg="#E11A22" margin={[4, 10, 0, 0]} />
@@ -383,7 +383,7 @@ export default function Home() {
 
             <Block flex column margin={[10, 60, 0, 0]} className={styles.row}>
               <Block w={30} h={30} margin={[0, 0, 0, 13]}>
-                <Image src="/product2/f4-2.png" layout="fill" objectFit="cover" />
+                <ExportedImage src="/product2/f4-2.png" layout="fill" objectFit="cover" />
               </Block>
               <Block s={14} margin={[8, 0, 0]} w={120} flex row top className={styles.label}>
                 <Block w={3} h={14} bg="#E11A22" margin={[4, 10, 0, 0]} />
@@ -393,7 +393,7 @@ export default function Home() {
 
             <Block flex column margin={[10, 60, 0, 0]} className={styles.row}>
               <Block w={30} h={28} margin={[0, 0, 0, 13]}>
-                <Image src="/product2/f4-3.png" layout="fill" objectFit="cover" />
+                <ExportedImage src="/product2/f4-3.png" layout="fill" objectFit="cover" />
               </Block>
               <Block s={14} margin={[8, 0, 0]} w={128} flex row top className={styles.label}>
                 <Block w={3} h={14} bg="#E11A22" fShrink="0" margin={[4, 10, 0, 0]} />
@@ -403,7 +403,7 @@ export default function Home() {
 
             <Block flex column margin={[10, 60, 0, 0]} className={styles.row}>
               <Block w={26} h={30} margin={[0, 0, 0, 13]}>
-                <Image src="/product2/f4-4.png" layout="fill" objectFit="cover" />
+                <ExportedImage src="/product2/f4-4.png" layout="fill" objectFit="cover" />
               </Block>
               <Block s={14} margin={[8, 0, 0]} w={128} flex row top className={styles.label}>
                 <Block w={3} h={14} bg="#E11A22" fShrink="0" margin={[4, 10, 0, 0]} />
@@ -447,7 +447,7 @@ export default function Home() {
                     0{index + 1}
                   </Block>
                   <Block fixed={50} fShrink={0}>
-                    <Image src={`/product2/i4-${index + 1}.png`} layout="fill" objectFit="cover" />
+                    <ExportedImage src={`/product2/i4-${index + 1}.png`} layout="fill" objectFit="cover" />
                   </Block>
                   <Block s={14} w={128} margin={[0, 0, 0, 12]} flex row>
                     {item}
