@@ -1,0 +1,27 @@
+
+
+
+.menuMobile{
+  display: none !important;
+}
+
+.container{
+  position: sticky  !important;
+  top: 0!important;
+  z-index: 2!important;
+  background-color: white!important;
+  width: 100%!important;
+}
+
+@media screen and (max-width: 480px){
+  
+  .qr{
+    align-items: flex-start !important;
+  }
+  .menuMobile{
+    display: block !important;
+  }
+  .menu{
+    display: none !important;
+  }
+}
