@@ -1,14 +1,14 @@
 /*
  * @Author: km2021
  * @Date: 1985-10-26 16:15:00
- * @LastEditTime: 2022-06-22 10:24:12
+ * @LastEditTime: 2022-06-23 16:37:53
  * @Description:
  * @FilePath: /web-zyh/pages/index.js
  *
  */
 import Head from 'next/head'
 import Image from 'next/image'
-import styles from '../styles/About.module.css'
+import styles from '../styles/Home.module.css'
 import Block from '../components/Block'
 
 const label = (title, titleEn) => {
@@ -26,11 +26,11 @@ const label = (title, titleEn) => {
 export default function Home() {
   return (
     <Block w="100%" bg="#000000" color="#FFFFFF" padding={[0, 0, 100]}>
-      <Block flex w="100%" h={800}>
+      <Block flex w="100%" h={800} className={styles.banner}>
         <Image src="/home/banner.png" objectFit="cover" layout="fill" />
       </Block>
 
-      <Block className="f1" margin={[0, 'auto']} flex padding={[100, 0, 0]} w="100%" h={1200}>
+      <Block className={styles.f1} margin={[0, 'auto']} flex padding={[100, 0, 0]} w="100%" h={1200}>
         <Block margin={[60, 30, 0, 300]}>
           <Block w={316} h={106}>
             <Image src="/home/i1.png" objectFit="cover" layout="fill" />
@@ -52,7 +52,7 @@ export default function Home() {
         </Block>
       </Block>
 
-      <Block className="f2" margin={[0, 'auto', 0]} flex padding={[100, 0, 0]} w="100%" h={900}>
+      <Block className={styles.f2} margin={[0, 'auto', 0]} flex padding={[100, 0, 0]} w="100%" h={900}>
         <Block margin={[60, 30, 0, 300]}>
           <Block w={766} h={106}>
             <Image src="/home/i2.png" objectFit="cover" layout="fill" />
@@ -63,12 +63,20 @@ export default function Home() {
         </Block>
       </Block>
 
-      <Block className="f3" margin={[0, 'auto', 0]} flex padding={[100, 0, 0]} w="100%" h={900}>
+      <Block className={styles.f3} margin={[0, 'auto', 0]} flex padding={[100, 0, 0]} w="100%" h={900}>
         <Block margin={[60, 30, 0, 300]}>
           <Block w={291} h={106}>
             <Image src="/home/i3.png" objectFit="cover" layout="fill" />
           </Block>
-          <Block lineHeight={31} margin={[120, 0, 0]} wmax={1360} padding={70} bg="#AB1E23" flex>
+          <Block
+            lineHeight={31}
+            className={styles.f3Body}
+            margin={[120, 0, 0]}
+            wmax={1360}
+            padding={70}
+            bg="#AB1E23"
+            flex
+          >
             <Block w="50%">
               <Block s={30} lineHeight={39}>
                 行业研究:浅谈网络货运发展状况与 2021未来趋势!
@@ -92,12 +100,12 @@ export default function Home() {
         </Block>
       </Block>
 
-      <Block className="f4" margin={[0, 'auto', 0]} padding={[100, 0, 0]} w="100%" h={1050}>
+      <Block className={styles.f4} margin={[0, 'auto', 0]} padding={[100, 0, 0]} w="100%" h={1050}>
         <Block margin={[60, 30, 0, 300]}>
           <Block w={420} h={106}>
             <Image src="/home/i4.png" objectFit="cover" layout="fill" />
           </Block>
-          <Block flex wrap margin={[54, -20]} space="between">
+          <Block flex wrap margin={[54, -20]} className={styles.f4Card} space="between">
             {[1, 2, 3, 4].map((icon) => {
               return (
                 <Block key={icon} flex={1} w="45%" margin={[20]} h={260} border borderColor="#EBEBEB">

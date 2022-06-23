@@ -10,6 +10,9 @@ a {
   color: inherit;
   text-decoration: none;
 }
+a:hover{
+  cursor: pointer;
+}
 
 * {
   box-sizing: border-box;
@@ -18,23 +21,10 @@ a {
 }
 
 
-
-.f1{
-  background: url('/home/bgf1.png') no-repeat center center;
-  background-size: cover;
+.menu-item:hover {
+  cursor: pointer;
+  color: #ab1e23 !important;
 }
-
-.f2{
-  background: url('/home/bgf2.png') no-repeat center center;
-  background-size: cover;
-}
-
-.f3{
-  background: url('/home/bgf3.png') no-repeat center center;
-  background-size: cover;
-}
-
-.f4{
-  background: url('/home/bgf4.png') no-repeat center center;
-  background-size: cover;
+.active {
+  color: #ab1e23 !important;
 }

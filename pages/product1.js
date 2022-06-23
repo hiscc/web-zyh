@@ -1,7 +1,7 @@
 /*
  * @Author: km2021
  * @Date: 1985-10-26 16:15:00
- * @LastEditTime: 2022-06-22 17:34:26
+ * @LastEditTime: 2022-06-23 15:22:40
  * @Description:
  * @FilePath: /web-zyh/pages/product1.js
  *
@@ -35,7 +35,7 @@ export default function Home() {
   return (
     <Block color="#333">
       {Style}
-      <Block w="100%" h={856} bg="black" flex className={styles.b1}>
+      <Block w="100%" bg="black" flex className={styles.b1}>
         <Block padding={[80, 0]} wmax={1200} w="100%" margin={[0, 'auto']}>
           <Block flex column>
             <Block flex row>
@@ -59,10 +59,10 @@ export default function Home() {
           </Block>
 
           <Block flex margin={[80, 0, 0]}>
-            <Block w={187} h={205} wmin={187}>
+            <Block w={187} h={205} wmin={187} className={styles.img}>
               <Image src="/product1/m1.png" layout="fill" />
             </Block>
-            <Block flex margin={[0, 0, 0, 100]}>
+            <Block flex margin={[0, 0, 0, 100]} className={styles.item}>
               <Block
                 w="100%"
                 h="100%"
@@ -71,7 +71,7 @@ export default function Home() {
               >
                 <Image src="/product1/f1.png" layout="fill" objectFit="cover" />
               </Block>
-              <Block padding={[32, 40]} bg="#FFF6F6" wmin={460} radius={14}>
+              <Block padding={[32, 40]} bg="#FFF6F6" radius={14}>
                 <Block s={20} margin={[4, 0]}>
                   具体体现在
                 </Block>
@@ -84,7 +84,7 @@ export default function Home() {
                     borderWidth={3}
                     border
                     borderColor={'#FF3841'}
-                    style={{ 'flex-shrink': 0 }}
+                    fShrink="0"
                   />
                   <Block color="#666666" margin={[-3, 0, 0, 20]}>
                     无车辆设备成本载体列支成品油、路桥成本存在争议
@@ -95,7 +95,15 @@ export default function Home() {
                 </Block>
 
                 <Block flex margin={[12, 0]}>
-                  <Block fixed={16} bg="transparent" radius={50} borderWidth={3} border borderColor={'#FF3841'} />
+                  <Block
+                    fixed={16}
+                    bg="transparent"
+                    radius={50}
+                    borderWidth={3}
+                    border
+                    borderColor={'#FF3841'}
+                    fShrink="0"
+                  />
                   <Block color="#666666" margin={[-3, 0, 0, 20]}>
                     临时委托运输难以获得ETC路桥发票
                   </Block>
@@ -115,7 +123,7 @@ export default function Home() {
                   </Block>
                 </Block>
 
-                <Block color="#666666" flex row margin={[50, 0, 0]}>
+                <Block color="#666666" flex row margin={[50, 0, 0]} className={styles.card}>
                   <Block padding={[36, 18]} margin={[0, 20, 0, 0]} radius={6} bg="#FFFFFF">
                     <Block node="p">根据客户实际</Block>
                     <Block node="p" margin={[4, 0]}>
@@ -153,7 +161,7 @@ export default function Home() {
         </Block>
       </Block>
 
-      <Block w="100%" h={856} bg="black" flex className={styles.b2}>
+      <Block w="100%" bg="black" flex className={styles.b2}>
         <Block padding={[80, 0]} wmax={1200} w="100%" margin={[0, 'auto']}>
           <Block flex column>
             <Block flex row>
@@ -178,10 +186,10 @@ export default function Home() {
           </Block>
 
           <Block flex margin={[80, 0, 0]}>
-            <Block w={187} h={205} wmin={187}>
+            <Block w={187} h={205} wmin={187} className={styles.img}>
               <Image src="/product1/m2.png" layout="fill" />
             </Block>
-            <Block flex margin={[0, 0, 0, 100]}>
+            <Block flex margin={[0, 0, 0, 100]} className={styles.item}>
               <Block
                 w="100%"
                 h="100%"
@@ -190,7 +198,7 @@ export default function Home() {
               >
                 <Image src="/product1/f2.png" layout="fill" objectFit="cover" />
               </Block>
-              <Block padding={[32, 40]} bg="#FFF6F6" wmin={460} radius={14}>
+              <Block padding={[32, 40]} bg="#FFF6F6" radius={14}>
                 <Block s={20} className="title-with-line" flex center middle>
                   <Block w={60} h={1} bg="#FFA517" />
                   <Block margin={[0, 16]}>方案价值</Block>
@@ -215,6 +223,7 @@ export default function Home() {
                         margin={[20]}
                         radius={6}
                         bg="#FFFFFF"
+                        className={styles.card}
                       >
                         <Block node="p">{title}</Block>
                       </Block>
@@ -227,7 +236,7 @@ export default function Home() {
         </Block>
       </Block>
 
-      <Block w="100%" h={856} bg="black" flex className={styles.b3}>
+      <Block w="100%" bg="black" flex className={styles.b3}>
         <Block padding={[80, 0]} wmax={1200} w="100%" margin={[0, 'auto']}>
           <Block flex column>
             <Block flex row>
@@ -253,10 +262,10 @@ export default function Home() {
           </Block>
 
           <Block flex margin={[80, 0, 0]}>
-            <Block w={187} h={205} wmin={187}>
+            <Block w={187} h={205} wmin={187} className={styles.img}>
               <Image src="/product1/m3.png" layout="fill" />
             </Block>
-            <Block flex margin={[0, 0, 0, 100]}>
+            <Block flex margin={[0, 0, 0, 100]} className={styles.item}>
               <Block
                 w="100%"
                 h="100%"
@@ -265,7 +274,7 @@ export default function Home() {
               >
                 <Image src="/product1/f3.png" layout="fill" objectFit="cover" />
               </Block>
-              <Block padding={[32, 40]} bg="#FFF6F6" wmin={460} radius={14}>
+              <Block padding={[32, 40]} bg="#FFF6F6" radius={14}>
                 <Block s={20} className="title-with-line" flex center middle>
                   <Block w={60} h={1} bg="#FFA517" />
                   <Block margin={[0, 16]}>方案价值</Block>
@@ -288,6 +297,7 @@ export default function Home() {
                         middle
                         padding={[36, 18]}
                         margin={[20]}
+                        className={styles.card}
                         radius={6}
                         bg="#FFFFFF"
                       >
@@ -302,7 +312,7 @@ export default function Home() {
         </Block>
       </Block>
 
-      <Block w="100%" h={856} bg="black" flex className={styles.b4}>
+      <Block w="100%" bg="black" flex className={styles.b4}>
         <Block padding={[80, 0]} wmax={1200} w="100%" margin={[0, 'auto']}>
           <Block flex column>
             <Block flex row>
@@ -327,10 +337,10 @@ export default function Home() {
           </Block>
 
           <Block flex margin={[80, 0, 0]}>
-            <Block w={187} h={205} wmin={187}>
+            <Block w={187} h={205} wmin={187} className={styles.img}>
               <Image src="/product1/m4.png" layout="fill" />
             </Block>
-            <Block flex margin={[0, 0, 0, 100]}>
+            <Block flex margin={[0, 0, 0, 100]} className={styles.item}>
               <Block
                 w="100%"
                 h="100%"
@@ -339,7 +349,7 @@ export default function Home() {
               >
                 <Image src="/product1/f4.png" layout="fill" objectFit="cover" />
               </Block>
-              <Block padding={[32, 40]} bg="#FFF6F6" wmin={460} radius={14}>
+              <Block padding={[32, 40]} bg="#FFF6F6" radius={14}>
                 <Block s={20} margin={[4, 0]}>
                   当前存在的主要问题
                 </Block>
@@ -360,21 +370,45 @@ export default function Home() {
                 </Block>
 
                 <Block flex margin={[12, 0]}>
-                  <Block fixed={16} bg="transparent" radius={50} borderWidth={3} border borderColor={'#42D3C1'} />
+                  <Block
+                    fixed={16}
+                    bg="transparent"
+                    radius={50}
+                    borderWidth={3}
+                    border
+                    borderColor={'#42D3C1'}
+                    fShrink="0"
+                  />
                   <Block color="#666666" margin={[-3, 0, 0, 20]}>
                     包工头提供的发票来源不可靠，经营遭遇发票风险提示被迫进项转出造成损失，影响纳税信用
                   </Block>
                 </Block>
 
                 <Block flex margin={[12, 0]}>
-                  <Block fixed={16} bg="transparent" radius={50} borderWidth={3} border borderColor={'#42D3C1'} />
+                  <Block
+                    fixed={16}
+                    bg="transparent"
+                    radius={50}
+                    borderWidth={3}
+                    border
+                    borderColor={'#42D3C1'}
+                    fShrink="0"
+                  />
                   <Block color="#666666" margin={[-3, 0, 0, 20]}>
                     工程发包方自购发票涉嫌虚假接受进项风险
                   </Block>
                 </Block>
 
                 <Block flex margin={[12, 0]}>
-                  <Block fixed={16} bg="transparent" radius={50} borderWidth={3} border borderColor={'#42D3C1'} />
+                  <Block
+                    fixed={16}
+                    bg="transparent"
+                    radius={50}
+                    borderWidth={3}
+                    border
+                    borderColor={'#42D3C1'}
+                    fShrink="0"
+                  />
                   <Block color="#666666" margin={[-3, 0, 0, 20]}>
                     目前的机械设备租赁平台/公司大量存在无实际设备开展租赁业务情况，面临巨大税收风险
                   </Block>
@@ -403,6 +437,7 @@ export default function Home() {
                         margin={[20]}
                         radius={6}
                         bg="#FFFFFF"
+                        className={styles.card}
                       >
                         <Block node="p">{title}</Block>
                       </Block>

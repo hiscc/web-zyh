@@ -42,3 +42,33 @@
   background-size: cover;
 }
 
+
+@media screen and (max-width: 480px){
+  .b1, .b2, .b3, .b4{
+    height: auto !important;
+    padding: 0 20px !important;
+  }
+  .banner{
+    height: 140px !important;
+  }
+  .bannerLeft{
+    padding: 0 20px !important;
+  }
+  .container{
+    padding: 20px 20px !important;
+  }
+  .img{
+    display: none !important;
+  }
+  .item{
+    margin-left: 20px !important;
+  }
+  .card{
+    flex-direction: column !important;
+    height: auto !important;
+    flex-basis: 100% !important;
+  }
+  .card > div{
+    margin-top: 10px !important;
+  }
+}

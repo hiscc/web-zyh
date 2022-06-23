@@ -1,0 +1,17 @@
+@media screen and (max-width: 480px){
+  .banner{
+    height: 140px !important;
+  }
+  .bannerLeft{
+    padding: 0 20px !important;
+  }
+  .container{
+    padding: 20px 20px !important;
+  }
+  .img{
+    height: 100px !important;
+  }
+  .item{
+    margin: 20px 0 !important;
+  }
+}

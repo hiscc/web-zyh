@@ -1,7 +1,7 @@
 /*
  * @Author: km2021
  * @Date: 1985-10-26 16:15:00
- * @LastEditTime: 2022-06-22 14:31:26
+ * @LastEditTime: 2022-06-23 14:59:48
  * @Description:
  * @FilePath: /web-zyh/pages/about.js
  *
@@ -27,27 +27,33 @@ export default function Home() {
   return (
     <Block>
       <Block w="100%" bg="black" flex>
-        <Block margin={[0, 'auto']} wmax={1200} w="100%" h={400} flex center>
-          <Block color="#FFFFFF" fBasis="600px">
+        <Block margin={[0, 'auto']} wmax={1200} w="100%" h={400} flex center class={styles.banner}>
+          <Block color="#FFFFFF" fBasis="600px" className={styles.bannerLeft}>
             <Block h={30}>关于我们</Block>
             <Block color="#626262">ABOUT US</Block>
           </Block>
-          <Block flex fBasis="600px" h={400}>
+          <Block flex fBasis="600px" h="100%">
             <Image src="/about/banner.png" alt="Vercel Logo" layout="fill" />
           </Block>
         </Block>
       </Block>
 
-      <Block padding={[80, 0, 100]} style={{ 'max-width': 1200 }} w="100%" margin={[0, 'auto']}>
+      <Block
+        padding={[80, 0, 100]}
+        style={{ 'max-width': 1200 }}
+        w="100%"
+        margin={[0, 'auto']}
+        className={styles.container}
+      >
         {label('公司简介', 'COMPANY PROFILE')}
 
-        <Block color="#333333" lineHeight="48px" margin={[60, 0]}>
+        <Block color="#333333" lineHeight="48px" margin={[60, 0]} className={styles.item}>
           浙样红搭建的物流全产业链场景的基础平台和应用平台，涵盖供应链业务众包、智慧公路驿站、智能单元化运力、物流装备租售、能源补给、路桥通行、从业者灵活用工、供应链金融、税务筹划等业务环节和行业要素，实现业务场景的数字化，帮助万亿级的传统物流产业向智慧物流产业转型升级。
         </Block>
 
         {label('联系方式', 'CONTACT INFORMATION')}
 
-        <Block margin={[60, 0, 0, 0]} w="100%" h="300px">
+        <Block margin={[60, 0, 0, 0]} w="100%" h="300px" className={styles.img}>
           <Image src="/about/map.png" alt="Vercel Logo" layout="fill" />
         </Block>
 
@@ -91,7 +97,7 @@ export default function Home() {
 
         {label('求职信息', 'JOB INFORMATION')}
 
-        <Block margin={[60, 0, 0, 0]} w="100%" h="300px">
+        <Block margin={[60, 0, 0, 0]} w="100%" h="300px" className={styles.img}>
           <Image src="/about/joinus.png" alt="Vercel Logo" layout="fill" />
         </Block>
 
