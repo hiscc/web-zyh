@@ -1,7 +1,7 @@
 /*
  * @Author: km2021
  * @Date: 1985-10-26 16:15:00
- * @LastEditTime: 2022-06-23 23:59:31
+ * @LastEditTime: 2022-06-24 11:42:36
  * @Description:
  * @FilePath: /web-zyh/pages/_app.js
  *
@@ -17,7 +17,8 @@ function MyApp({ Component, pageProps }) {
     <Layout>
       <Head>
         <title>浙样红 - 让物流更简单</title>
-        <link rel="shortcut icon" href="/static/favicon.ico"/>
+        <link rel="icon" type="image/png" sizes="32x32" href="/static/favicon-32x32.png"/>
+
         {/* <meta name="viewport" content="viewport-fit=cover" /> */}
       </Head>
       <Component {...pageProps} />
