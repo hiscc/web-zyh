@@ -1,9 +1,9 @@
 /*
  * @Author: km2021
  * @Date: 2022-06-22 11:29:10
- * @LastEditTime: 2022-06-22 11:34:37
+ * @LastEditTime: 2022-06-24 11:09:02
  * @Description: 
- * @FilePath: /web-zyh/components/ActiveLink.ts
+ * @FilePath: /web-zyh/components/ActiveLink.tsx
  * 
  */
 import { useRouter } from 'next/router'
@@ -25,7 +25,7 @@ const ActiveLink = ({
   const child = Children.only(children)
   const childClassName = child.props.className || ''
   const [className, setClassName] = useState(childClassName)
-
+  const [href, setHref] = useState(props.href)
   useEffect(() => {
     // Check if the router fields are updated client-side
     if (isReady) {
@@ -36,13 +36,32 @@ const ActiveLink = ({
         location.href
       ).pathname
 
+      
+      
+
       // Using URL().pathname to get rid of query and hash
       const activePathname = new URL(asPath, location.href).pathname
 
-      const newClassName =
+      console.log('location.href---', location.href);
+      console.log('linkPathname---', linkPathname);
+      console.log('activePathname---', activePathname);
+      
+      // let newClassName = childClassName
+        
+      console.log('process.env.NODE_ENV----', process.env.NODE_ENV);
+      
+
+      // // 解决二级或多级路经的问题
+      // if(linkPathname.includes(activePathname)){
+      //   setHref(linkPathname)
+      //   newClassName = `${childClassName} ${activeClassName}`.trim()
+      // }
+
+      let newClassName =
         linkPathname === activePathname
           ? `${childClassName} ${activeClassName}`.trim()
           : childClassName
+      
 
       if (newClassName !== className) {
         setClassName(newClassName)

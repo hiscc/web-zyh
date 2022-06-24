@@ -1,7 +1,7 @@
 /*
  * @Author: km2021
  * @Date: 2022-06-20 16:09:41
- * @LastEditTime: 2022-06-24 09:49:06
+ * @LastEditTime: 2022-06-24 11:18:55
  * @Description:
  * @FilePath: /web-zyh/components/navbar.js
  *
@@ -20,11 +20,11 @@ export default function navbar() {
     setMenushow((val) => !val)
   }
   const menuList = [
-    { title: '首页', link: '/zyh/index.html' },
-    { title: '产品与服务', link: '/zyh/product2.html' },
-    { title: '解决方案', link: '/zyh/product1.html' },
-    { title: '新闻中心', link: '/zyh/news.html' },
-    { title: '关于我们', link: '/zyh/about.html' },
+    { title: '首页', link: '/' },
+    { title: '产品与服务', link: '/product2/' },
+    { title: '解决方案', link: '/product1/' },
+    { title: '新闻中心', link: '/news/' },
+    { title: '关于我们', link: '/about/' },
   ]
 
   return (

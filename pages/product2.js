@@ -1,7 +1,7 @@
 /*
  * @Author: km2021
  * @Date: 1985-10-26 16:15:00
- * @LastEditTime: 2022-06-24 00:33:47
+ * @LastEditTime: 2022-06-24 11:17:50
  * @Description:
  * @FilePath: /web-zyh/pages/product2.js
  *
@@ -51,7 +51,7 @@ export default function Home() {
               <Block w={30} h={24} margin={[0, 0, 0, 13]}>
                 <ExportedImage src="/static/product2/f1-1.png" layout="fill" objectFit="cover" />
               </Block>
-              <Block s={14} margin={[8, 0, 0]} w={96} flex row top className={styles.label}>
+              <Block s={14} margin={[8, 0, 0]} w={110} flex row top className={styles.label}>
                 <Block w={3} h={14} bg="#E11A22" fShrink="0" margin={[4, 10, 0, 0]} />
                 <Block>专业接口取票 优先级更高</Block>
               </Block>

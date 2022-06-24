@@ -1,16 +1,18 @@
 /*
  * @Author: km2021
  * @Date: 1985-10-26 16:15:00
- * @LastEditTime: 2022-06-24 00:25:19
+ * @LastEditTime: 2022-06-24 11:16:09
  * @Description:
  * @FilePath: /web-zyh/next.config.js
  *
  */
 /** @type {import('next').NextConfig} */
+const isProd = process.env.NODE_ENV === 'production'
 
 
 const nextConfig = {
-  assetPrefix: "./",
+  basePath: isProd? '/zyh': "",
+  assetPrefix: isProd? "/zyh" : "/",
   reactStrictMode: false,
   typescript: {
     // !! WARN !!
@@ -19,6 +21,7 @@ const nextConfig = {
     // !! WARN !!
     // ignoreBuildErrors: true,
   },
+  moduleResolution: 'node',
   images: {
     loader: "custom",
     imageSizes: [16, 32, 48, 64, 96, 128, 256, 384],
@@ -33,6 +36,7 @@ const nextConfig = {
     storePicturesInWEBP: true,
     generateAndUseBlurImages: true,
   },
+  trailingSlash: true
   // experimental: { images: {  unoptimized: true, } },
 }
 

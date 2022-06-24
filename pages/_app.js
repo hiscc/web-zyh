@@ -18,7 +18,7 @@ function MyApp({ Component, pageProps }) {
       <Head>
         <title>浙样红 - 让物流更简单</title>
         <link rel="shortcut icon" href="/static/favicon.ico"/>
-        <meta name="viewport" content="viewport-fit=cover" />
+        {/* <meta name="viewport" content="viewport-fit=cover" /> */}
       </Head>
       <Component {...pageProps} />
     </Layout>
