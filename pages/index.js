@@ -1,7 +1,7 @@
 /*
  * @Author: km2021
  * @Date: 1985-10-26 16:15:00
- * @LastEditTime: 2022-06-24 11:28:51
+ * @LastEditTime: 2022-06-24 12:05:27
  * @Description:
  * @FilePath: /web-zyh/pages/index.js
  *
@@ -46,7 +46,7 @@ export default function Home() {
           </Block>
           <Block margin={[60, 0, 40]}>数字物流看中国，中国物流浙样红！</Block>
 
-          <Block w={357} h={118}>
+          <Block w={300} h={99}>
             <ExportedImage src="/static/home/f1-2.png" objectFit="cover" layout="fill" />
           </Block>
         </Block>
