@@ -1,7 +1,7 @@
 /*
  * @Author: km2021
  * @Date: 2022-06-20 16:09:41
- * @LastEditTime: 2022-06-23 23:13:19
+ * @LastEditTime: 2022-06-24 09:49:06
  * @Description:
  * @FilePath: /web-zyh/components/navbar.js
  *
@@ -20,11 +20,11 @@ export default function navbar() {
     setMenushow((val) => !val)
   }
   const menuList = [
-    { title: '首页', link: '/' },
-    { title: '产品与服务', link: '/product2' },
-    { title: '解决方案', link: '/product1' },
-    { title: '新闻中心', link: '/news' },
-    { title: '关于我们', link: '/about' },
+    { title: '首页', link: '/zyh/index.html' },
+    { title: '产品与服务', link: '/zyh/product2.html' },
+    { title: '解决方案', link: '/zyh/product1.html' },
+    { title: '新闻中心', link: '/zyh/news.html' },
+    { title: '关于我们', link: '/zyh/about.html' },
   ]
 
   return (
@@ -32,10 +32,10 @@ export default function navbar() {
       <Block flex column wmax={1200} w="100%" margin={[0, 'auto']} className={styles.menuMobile}>
         <Block flex row space="between" padding={[10, 20]} lineHeight={80} center>
           <Block w={78} h={26}>
-            <ExportedImage src='/home/logo-black.png' layout="fill" />
+            <ExportedImage src='/static/home/logo-black.png' layout="fill" />
           </Block>
           <Block w={40} h={20} onClick={handleToggle}>
-            <ExportedImage src="/home/menu.png" layout="fill" />
+            <ExportedImage src="/static/home/menu.png" layout="fill" />
           </Block>
         </Block>
 
@@ -64,7 +64,7 @@ export default function navbar() {
         <Block flex="1" space="between" center h={80} lineHeight={80}>
           <Block flex center>
             <Block w={146} h={52}>
-              <ExportedImage src="/home/logo-black.png" layout="fill" />
+              <ExportedImage src="/static/home/logo-black.png" layout="fill" />
             </Block>
           </Block>
           {menuList.map((menu) => {
@@ -79,7 +79,7 @@ export default function navbar() {
 
           <Block flex color="white" bg="#AB1E23" center padding={[0, 30]}>
             <Block fixed={18} margin={[0, 12, 0, 0]}>
-              <ExportedImage src="/about/person.png" layout="fill" />
+              <ExportedImage src="/static/about/person.png" layout="fill" />
             </Block>
             <Block flex center>
               <Block>登录</Block>

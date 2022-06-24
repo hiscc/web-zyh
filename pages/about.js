@@ -33,7 +33,7 @@ export default function Home() {
             <Block color="#626262">ABOUT US</Block>
           </Block>
           <Block flex fBasis="600px" h="100%">
-            <ExportedImage src="/about/banner.png" alt="Vercel Logo" layout="fill" />
+            <ExportedImage src="/static/about/banner.png" alt="Vercel Logo" layout="fill" />
           </Block>
         </Block>
       </Block>
@@ -54,13 +54,13 @@ export default function Home() {
         {label('联系方式', 'CONTACT INFORMATION')}
 
         <Block margin={[60, 0, 0, 0]} w="100%" h="300px" className={styles.img}>
-          <ExportedImage src="/about/map.png" alt="Vercel Logo" layout="fill" />
+          <ExportedImage src="/static/about/map.png" alt="Vercel Logo" layout="fill" />
         </Block>
 
         <Block color="#666666" margin={[60, 0, 80, 0]}>
           <Block className={styles.Block} flex>
             <Block w={20} h={20} margin={[0, 10, 0, 0]}>
-              <ExportedImage src="/about/kehurexian.png" alt="Vercel Logo" layout="fill" />
+              <ExportedImage src="/static/about/kehurexian.png" alt="Vercel Logo" layout="fill" />
             </Block>
             <Block>
               <Block>客户服务热线 7*12小时</Block>
@@ -72,7 +72,7 @@ export default function Home() {
 
           <Block className={styles.Block} flex margin={[20, 0, 0, 0]}>
             <Block w={20} h={16} margin={[0, 10, 0, 0]}>
-              <ExportedImage src="/about/email.png" alt="Vercel Logo" layout="fill" />
+              <ExportedImage src="/static/about/email.png" alt="Vercel Logo" layout="fill" />
             </Block>
             <Block>
               <Block>企业业务服务邮箱</Block>
@@ -84,7 +84,7 @@ export default function Home() {
 
           <Block className={styles.Block} flex margin={[20, 0, 0, 0]}>
             <Block w={20} h={20} margin={[0, 10, 0, 0]}>
-              <ExportedImage src="/about/xxdzhi.png" alt="address" layout="fill" />
+              <ExportedImage src="/static/about/xxdzhi.png" alt="address" layout="fill" />
             </Block>
             <Block>
               <Block>详细地址</Block>
@@ -98,13 +98,13 @@ export default function Home() {
         {label('求职信息', 'JOB INFORMATION')}
 
         <Block margin={[60, 0, 0, 0]} w="100%" h="300px" className={styles.img}>
-          <ExportedImage src="/about/joinus.png" alt="Vercel Logo" layout="fill" />
+          <ExportedImage src="/static/about/joinus.png" alt="Vercel Logo" layout="fill" />
         </Block>
 
         <Block color="#666666" margin={[60, 0, 0, 0]}>
           <Block className={styles.Block} flex>
             <Block w={20} h={20} margin={[0, 10, 0, 0]}>
-              <ExportedImage src="/about/kehurexian.png" alt="Vercel Logo" layout="fill" />
+              <ExportedImage src="/static/about/kehurexian.png" alt="Vercel Logo" layout="fill" />
             </Block>
             <Block>
               <Block>求职联系电话</Block>
@@ -116,7 +116,7 @@ export default function Home() {
 
           <Block className={styles.Block} flex margin={[20, 0, 0, 0]}>
             <Block w={20} h={16} margin={[0, 10, 0, 0]}>
-              <ExportedImage src="/about/email.png" alt="Vercel Logo" layout="fill" />
+              <ExportedImage src="/static/about/email.png" alt="Vercel Logo" layout="fill" />
             </Block>
             <Block>
               <Block>简历投递邮箱</Block>
@@ -128,7 +128,7 @@ export default function Home() {
 
           <Block className={styles.Block} flex margin={[20, 0, 0, 0]}>
             <Block w={20} h={20} margin={[0, 10, 0, 0]}>
-              <ExportedImage src="/about/xxdzhi.png" alt="address" layout="fill" />
+              <ExportedImage src="/static/about/xxdzhi.png" alt="address" layout="fill" />
             </Block>
             <Block>
               <Block>详细地址</Block>

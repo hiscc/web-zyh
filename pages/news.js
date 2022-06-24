@@ -64,7 +64,7 @@ export default function Home() {
               <Block node="a" flex column key={index} margin={[0, 0, 80, 0]} wmax={700} w="100%">
                 <Block w="100%">
                   <Block w="100%" h={526} className={styles.pimg}>
-                    <ExportedImage src={`/news/p${index + 1}.png`} layout="fill" />
+                    <ExportedImage src={`/static/news/p${index + 1}.png`} layout="fill" />
                   </Block>
                   <Block className={styles.content}>
                     {label(item.label, item.time)}
@@ -123,7 +123,7 @@ export default function Home() {
               <Block node="a" flex column key={index} margin={[0, 0, 80, 0]} wmax={400} w="100%">
                 <Block w="100%">
                   <Block w="100%" h={300} className={styles.pimg}>
-                    <ExportedImage src={`/news/s${index + 1}.png`} layout="fill" />
+                    <ExportedImage src={`/static/news/s${index + 1}.png`} layout="fill" />
                   </Block>
                   <Block className={styles.content}>
                     {label(item.label, item.time)}

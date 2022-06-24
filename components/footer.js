@@ -93,7 +93,7 @@ export default function footer() {
         <Block flex column>
           <Block flex row>
             <Block w={20} h={20} margin={[0, 10, 0, 0]}>
-              <ExportedImage src="/about/phone.png" layout="fill" />
+              <ExportedImage src="/static/about/phone.png" layout="fill" />
             </Block>
             <Block>
               <Block>客户服务热线 7*12小时</Block>
@@ -105,7 +105,7 @@ export default function footer() {
 
           <Block flex row margin={[20, 0, 0]}>
             <Block w={20} h={16} margin={[0, 10, 0, 0]}>
-              <ExportedImage src="/about/email-white.png" layout="fill" />
+              <ExportedImage src="/static/about/email-white.png" layout="fill" />
             </Block>
             <Block>
               <Block>企业业务服务邮箱</Block>
@@ -115,7 +115,7 @@ export default function footer() {
 
           <Block flex column margin={[20, 0]} middle center className={styles.qr}>
             <Block fixed={100} margin={[0, 10, 0, 0]}>
-              <ExportedImage src="/about/qr.png" layout="fill" />
+              <ExportedImage src="/static/about/qr.png" layout="fill" />
             </Block>
             <Block color="#999999" margin={[7, 0, 0]}>
               关注我们

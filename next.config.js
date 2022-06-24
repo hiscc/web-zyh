@@ -1,7 +1,7 @@
 /*
  * @Author: km2021
  * @Date: 1985-10-26 16:15:00
- * @LastEditTime: 2022-06-23 23:41:26
+ * @LastEditTime: 2022-06-24 00:25:19
  * @Description:
  * @FilePath: /web-zyh/next.config.js
  *
@@ -10,7 +10,7 @@
 
 
 const nextConfig = {
-  assetPrefix: "/zyh",
+  assetPrefix: "./",
   reactStrictMode: false,
   typescript: {
     // !! WARN !!
@@ -24,8 +24,8 @@ const nextConfig = {
     imageSizes: [16, 32, 48, 64, 96, 128, 256, 384],
     deviceSizes: [640, 750, 828, 1080, 1200, 1920, 2048, 3840],
     nextImageExportOptimizer: {
-      imageFolderPath: "public",
-      exportFolderPath: "out",
+      imageFolderPath: "public/static",
+      exportFolderPath: "out/static",
       quality: 75,
     },
   },
