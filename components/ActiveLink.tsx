@@ -1,7 +1,7 @@
 /*
  * @Author: km2021
  * @Date: 2022-06-22 11:29:10
- * @LastEditTime: 2022-06-24 11:09:02
+ * @LastEditTime: 2022-06-24 12:10:04
  * @Description: 
  * @FilePath: /web-zyh/components/ActiveLink.tsx
  * 
@@ -42,13 +42,13 @@ const ActiveLink = ({
       // Using URL().pathname to get rid of query and hash
       const activePathname = new URL(asPath, location.href).pathname
 
-      console.log('location.href---', location.href);
-      console.log('linkPathname---', linkPathname);
-      console.log('activePathname---', activePathname);
-      
+      // console.log('location.href---', location.href);
+      // console.log('linkPathname---', linkPathname);
+      // console.log('activePathname---', activePathname);
+      // console.log('process.env.NODE_ENV----', process.env.NODE_ENV);
+
       // let newClassName = childClassName
         
-      console.log('process.env.NODE_ENV----', process.env.NODE_ENV);
       
 
       // // 解决二级或多级路经的问题
